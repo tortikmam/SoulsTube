@@ -1,0 +1,128 @@
+/* Основные стили страницы */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('https://www.transparenttextures.com/patterns/dark-stone.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #d4af37;
+    min-height: 100vh;
+    font-family: 'Cinzel', serif;
+  }
+  
+  /* Контейнер контента */
+  .login-container {
+    padding-top: 80px;
+    max-width: 1200px;
+    margin: 0 auto 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Блок формы */
+  .login-form {
+    background-color: #2b2522;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), inset 0 0 10px rgba(208, 0, 0, 0.2);
+    border: 1px solid #4a3c31;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Заголовок формы */
+  .login-form h2 {
+    margin-bottom: 30px;
+    color: #d4af37;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Сообщение об ошибке */
+  .error-message {
+    padding: 12px;
+    background-color: #2d0000;
+    color: #ff4040;
+    border: 1px solid #4a3c31;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    text-align: left;
+    word-break: break-word;
+  }
+  
+  /* Поля ввода */
+  .login-form input {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #4a3c31;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #333;
+    color: #d4af37;
+    margin-bottom: 15px;
+  }
+  
+  .login-form input:focus {
+    outline: none;
+    border-color: #d00000;
+    box-shadow: 0 0 0 0.1rem rgba(208, 0, 0, 0.3);
+  }
+  
+  /* Кнопка отправки */
+  .login-form button[type="submit"] {
+    padding: 12px 20px;
+    background-color: #d00000;
+    color: #eeeeee;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .login-form button[type="submit"]:hover {
+    background-color: #ff4040;
+  }
+  
+  /* Кнопка переключения форм */
+  .toggle-button {
+    margin-top: 25px;
+    background-color: transparent;
+    color: #d4af37;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+  }
+  
+  .toggle-button:hover {
+    color: #ff4040;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .login-form {
+      padding: 20px;
+    }
+  
+    .login-form h2 {
+      font-size: 1.5em;
+    }
+  
+    .login-form input {
+      font-size: 14px;
+    }
+  }
